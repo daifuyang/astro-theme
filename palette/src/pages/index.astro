@@ -1,17 +1,38 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Header from '../components/header/header';
-import Footer from '../components/footer/footer';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="自媒体博客主题：palette">
-	<Header />
-	<main>
-		<h1>Halo</h1>
-	</main>
-	<Footer />
+  <div class="container mx-auto grid grid-cols-12 gap-5 mt-10">
+    <div class="bg-white col-span-9 p-5 flex flex-col gap-5 rounded overflow-hidden">
+      <div class="h-[335px] grid grid-cols-12 gap-5">
+        <div class="col-span-9 bg-green-300 rounded overflow-hidden">9/12</div>
+        <div class="col-span-3">
+          <div class="grid grid-rows-2 gap-5 h-full">
+            <div class="bg-blue-500 rounded overflow-hidden">上半部分内容</div>
+            <div class="bg-green-500 rounded overflow-hidden">下半部分内容</div>
+          </div>
+        </div>
+      </div>
+
+	  <div class="grid grid-cols-4 gap-5">
+		<div class="bg-purple-400">3</div>
+		<div class="bg-purple-400">3</div>
+		<div class="bg-purple-400">3</div>
+		<div class="bg-purple-400">3</div>
+	  </div>
+
+	  <div class="grid grid-cols-2 gap-5">
+		<div class="bg-purple-400">2</div>
+		<div class="bg-purple-400">2</div>
+	  </div>
+
+    </div>
+    <div class="col-span-3">
+      <!-- 3-column content -->
+      This is 3/12 (25%) width
+    </div>
+  </div>
 </Layout>
 
-<style>
-	
-</style>
+<style></style>
